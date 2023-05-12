@@ -26,10 +26,16 @@
 
   </body>
   <script>
-    let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
+    // let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
 
     // Add your code here
+    let myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
 
+    let myArray = myString.split('+');
+
+    let arrayLength = myArray.length;
+
+    let lastItem = myArray[arrayLength - 1];
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
