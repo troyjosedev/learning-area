@@ -30,6 +30,17 @@
     const para = document.createElement('p');
 
     // Add your code here
+    function random(min, max) {
+      const num = Math.floor(Math.random() * (max - 0 ) + min)
+      return num
+    }
+
+    function chooseItem(array){
+      const choices = array[random(0, array.length)]
+      return choices
+    }
+
+    para.textContent = chooseItem(names)
 
     // Don't edit the code below here!
 

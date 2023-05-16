@@ -41,7 +41,16 @@
     ]
 
     // Add your code here
+    for (let i = 0; i < phonebook.length; i++) {
+      if (phonebook[i].name === name) {
+        para.textContent = `${phonebook[i].name}'s number is ${phonebook[i].number }.`
+        break;
+      }
 
+      if (i === phonebook.length -1) {
+        para.textContent = `Name not found in the phonebook`;
+      }
+    }
     // Don't edit the code below here!
     const section = document.querySelector('section');
     section.appendChild(para);

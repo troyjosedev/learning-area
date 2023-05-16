@@ -24,11 +24,17 @@
   
   
   <script>
-    let season = 'summer';
+    let season = 'rainy';
     let response;
 
     // Add your code here
-
+    if (season === "summer") {
+    response = "It's summer today use sunscreen"
+    } else if (season === "rainy"){
+        response = 'Stay in your house just to be safe'
+    } else {
+      response = "I don't know what season is just watch weather forecast"
+    }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');

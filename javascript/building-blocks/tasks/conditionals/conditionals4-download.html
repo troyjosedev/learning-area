@@ -33,7 +33,12 @@
     let pwdResult;
 
     // Add your code here
-
+  if (machineActive){
+    machineResult = "Machine is active. Trying log in"
+    pwdResult = pwd === "cheese" ? "Login successful." : "Password incorrect; login failed"
+  } else {
+    machineResult = "Machine is inactive. Activate and try logging in again"
+  }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
