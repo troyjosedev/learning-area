@@ -26,10 +26,46 @@
 
   </body>
   <script>
-    let bandInfo;
+   let bandInfo;
+
 
     // Add your code here
+    let band = {
 
+// Put your code here
+name : "Destiny's Child",
+nationality: "USA",
+genre: "RNB",
+members: 3,
+formed: 1998,
+split: 2006,
+albums: [
+    {  
+      name: "Destiny's Child",
+      released: 1998,
+    },
+    {  
+      name: "The Writing's on the Wall",
+      released: 1999,
+    },
+    {  
+      name: "Survivor",
+      released: 1998,
+    },
+    {  
+      name: "8 Days of Christmas",
+      released: 2001,
+    },
+    {  
+      name: "Destiny Fulfilled ",
+      released: 2004,
+    },
+
+
+     
+],
+}
+  bandInfo = `The ${band.nationality} ${band.genre} band ${band.name} were active ${band.formed}-${ band.split}. Their first album, ${ band.albums[0].name}, was released in ${ band.albums[0].released }.`
 
     // Don't edit the code below here!
 
