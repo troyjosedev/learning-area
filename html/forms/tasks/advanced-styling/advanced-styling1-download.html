@@ -23,13 +23,33 @@
         font-size: 100%;
         padding: 0; margin: 0;
       }
+
+      input[type="search"] {
+      width: 200px;
+      line-height: 1.5rem;
+      border: 2px solid #ccc;
+      -webkit-appearance: none;
+      border-radius: 6px;
+      outline: none
+    }
+
+    input[type="search"]:hover, input[type="search"]:focus {
+      border: 2px solid rgb(122, 156, 218);
+      box-shadow: 1px 1px 1px gray;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
     </style>
   </head>
 
   <body>
     <form>
       <input type="search" name="search" id="search" aria-label="Search our site">
-      <div></div>
+      <div><img src="search-24px.png" alt=""></div>
     </form>
   </body>
 

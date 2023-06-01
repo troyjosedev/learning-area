@@ -66,6 +66,42 @@
         width: 60%;
         margin: 0 auto;
       }
+
+     input + span {
+      position: relative;
+     }
+
+     input:required + span::after {
+      font-size: 0.7rem;
+      position: absolute;
+      content: required;
+      color: white;
+      background-color: black;
+      padding: 5px 10px;
+      top: -26px;
+      left: -70px;
+     }
+
+     input + span::before {
+      position: absolute;
+      right: -20px;
+      top: 5px;
+     }
+
+     input:invalid {
+      border: 2px solid red
+     }
+
+     input:invalid + span::before {
+      content: '✖';
+      color: red;
+    }
+
+    input:valid + span::before {
+      content: '✓';
+      color: green;
+    }
+
     </style>
   </head>
 
